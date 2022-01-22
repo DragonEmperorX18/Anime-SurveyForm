@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Anime-Survey-form</title>
+</head>
+<body translate="no">
+    
+    <div class="Container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Anime Survey Form
+            </h1>
+            <p id="description" class="description-center">
+                Thank you for talking your time to help us improve the platform!!
+            </p>
+
+        </header>
+        <main class="main-content">
+        <form id="survey-form">
+         <div class="form-group">
+             <label id="name-label" for="name">Name</label>
+             <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name!" required>
+         </div> 
+         <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email!" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="for">Age</label>
+            <span class="clue">(optional)</span>
+            <input type="number" name="age" id="number" min="8" max="100" class="form-control" placeholder="Age!" required>
+        </div>
+        <div>
+           <p>Which options describes your current role?</p> 
+           <select id="dropdown" name="role" class="form-control" required>
+               <option disabled selected value>Select the current role</option>
+               <option value="student">Student</option>
+               <option value="job">Full-Time Job</option>
+               <option value="job">Part-Time Job</option>
+               <option value="learner">Full-Time Learner</option>
+               <option value="preferno">Prefer not to say</option>
+               <option value="other">Others</option>
+           </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend Anime to friends</p>
+            <label>
+                <input name="user-recommand" value="definitely" type="radio" class="input-radio" checked>
+                Definitely
+            </label>
+            <label>
+                <input name="user-recommand" value="maybe" type="radio" class="input-radio" checked>
+                Maybe
+            </label>
+            <label>
+                <input name="user-recommand" value="not-sure" type="radio" class="input-radio" checked>
+                Not sure
+            </label>
+
+        </div>
+        <div class="form-group">
+            <p>Which is your favourite Anime of all time!</p>
+            <input type="text" name="favourite anime" id="favourite-anime" class="form-control" placeholder="Enter Your favourite Anime!" required>
+
+        </div>
+        <div class="form-group">
+            <p>Which is your favourite anime-genre!</p>
+            <span class="clue">(check all that apply)</span>
+            <label >
+                <input name="prefer" value="Action" type="checkbox" class="input-checkbox"/>
+                Action
+            </label>
+            <label >
+                <input name="prefer" value="Adventure" type="checkbox" class="input-checkbox"/>
+                Adventure
+            </label>
+            <label >
+                <input name="prefer" value="comedy" type="checkbox" class="input-checkbox"/>
+                Comedy
+            </label>
+            <label >
+                <input name="prefer" value="drama" type="checkbox" class="input-checkbox"/>
+                Drama
+            </label>
+            <label >
+                <input name="prefer" value="Slice-of-life" type="checkbox" class="input-checkbox"/>
+                Slice of life
+            </label>
+            <label >
+                <input name="prefer" value="fantasy" type="checkbox" class="input-checkbox"/>
+                Fantasy
+            </label> 
+            <label >
+                <input name="prefer" value="magic" type="checkbox" class="input-checkbox"/>
+                Magic
+            </label>
+            <label >
+                <input name="prefer" value="supernatural" type="checkbox" class="input-checkbox"/>
+                Supernatural
+            </label>
+            <label >
+                <input name="prefer" value="horror" type="checkbox" class="input-checkbox"/>
+                Horror
+            </label>
+            <label >
+                <input name="prefer" value="mystery" type="checkbox" class="input-checkbox"/>
+                Mystery
+            </label>
+            <label >
+                <input name="prefer" value="psychological" type="checkbox" class="input-checkbox"/>
+                Psychological
+            </label>
+            <label >
+                <input name="prefer" value="romance" type="checkbox" class="input-checkbox"/>
+                Romance
+            </label>
+            <label >
+                <input name="prefer" value="sci-fi" type="checkbox" class="input-checkbox"/>
+                Sci-fi
+            </label>
+
+        </div>
+        <div class="form-group">
+            <p>What type of anime you want to see more in future!</p>
+            <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button"> Submit </button>
+        </div>
+
+        </form>
+    </div>
+</main>
+    
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
